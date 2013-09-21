@@ -2,7 +2,7 @@ require 'sinatra'
 require 'grok-pure'
 require 'json'
 require 'find'
-
+set :bind, '0.0.0.0'
 class Application < Sinatra::Base
   
   def grok
